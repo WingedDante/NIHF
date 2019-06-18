@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+
+}
+
+nav{
+  display: inline-block;
+}
+li{
+  list-style-type: none;
+}
+
+a{
+  color: #9999ff;
+}

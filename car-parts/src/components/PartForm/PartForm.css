@@ -1,0 +1,26 @@
+.card {
+    width: 512px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px !important;
+  }
+  .card-menu {
+    color: #fff;
+  }
+  .card-title{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: left;
+    font-weight: 900 !important;
+  }
+  .align-right{
+    text-align: right;
+  }
+  .italic{
+    font-style: italic;
+  }
+  .manName{
+      text-align: right;
+  }
+ 
