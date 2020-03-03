@@ -36,7 +36,7 @@ class PartForm extends Component {
   }
 
   deleteData(){
-    fetch(`https://localhost:5001/api/todo/${this.state.part.id}`, {
+    fetch(`http://localhost:5000/api/todo/${this.state.part.id}`, {
         method: 'delete'
     }).then(()=>{
         this.props.deleteCallback();
@@ -62,7 +62,8 @@ class PartForm extends Component {
   }
 
   saveChanges(){
-    fetch('https://localhost:5001/api/todo/', {
+    // this.state.part.partNumber = parseInt(this.state.partNumber);
+    fetch('http://localhost:5000/api/todo/', {
         method: 'put',
         body: JSON.stringify(this.state.part),
         headers: {

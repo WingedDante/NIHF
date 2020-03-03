@@ -39,7 +39,7 @@ class PartList extends Component {
     }
 
     retrieveData(){
-        fetch('https://localhost:5001/api/todo')
+        fetch('http://localhost:5000/api/todo')
             .then(response => response.json())
             .then(data => this.setState({ parts: data }));
     }
@@ -68,7 +68,7 @@ class PartList extends Component {
     }
 
     postData(){
-        fetch('https://localhost:5001/api/todo', {
+        fetch('http://localhost:5000/api/todo', {
             method: 'post',
             body: JSON.stringify({
                 "PartName": this.state.newPart.partName,
